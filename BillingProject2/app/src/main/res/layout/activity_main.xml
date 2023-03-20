@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <EditText
+        android:id="@+id/client_id_edit_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/client_id_edit_text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023" />
+
+    <EditText
+        android:id="@+id/client_name_edit_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/client_name_edit_text"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="@+id/client_id_edit_text"
+        app:layout_constraintStart_toStartOf="@+id/client_id_edit_text"
+        app:layout_constraintTop_toBottomOf="@+id/client_id_edit_text" />
+
+    <EditText
+        android:id="@+id/prd_name_edit_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/prd_name_edit_text"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="@+id/client_name_edit_text"
+        app:layout_constraintStart_toStartOf="@+id/client_name_edit_text"
+        app:layout_constraintTop_toBottomOf="@+id/client_name_edit_text" />
+
+    <EditText
+        android:id="@+id/prd_price_edit_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/prd_price_edit_text"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="@+id/prd_name_edit_text"
+        app:layout_constraintStart_toStartOf="@+id/prd_name_edit_text"
+        app:layout_constraintTop_toBottomOf="@+id/prd_name_edit_text" />
+
+    <EditText
+        android:id="@+id/prd_qty_edit_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/prd_qty_edit_text"
+        app:layout_constraintEnd_toEndOf="@+id/prd_price_edit_text"
+        app:layout_constraintStart_toStartOf="@+id/prd_price_edit_text"
+        app:layout_constraintTop_toBottomOf="@+id/prd_price_edit_text" />
+
+    <TextView
+        android:id="@+id/billing_total_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/billing_total_text_view"
+        app:layout_constraintEnd_toEndOf="@+id/prd_qty_edit_text"
+        app:layout_constraintStart_toStartOf="@+id/prd_qty_edit_text"
+        app:layout_constraintTop_toBottomOf="@+id/prd_qty_edit_text" />
+
+    <TextView
+        android:id="@+id/client_info_text_view"
+        android:layout_width="275dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/client_info_text_view"
+        app:layout_constraintEnd_toEndOf="@+id/billing_total_text_view"
+        app:layout_constraintStart_toStartOf="@+id/billing_total_text_view"
+        app:layout_constraintTop_toBottomOf="@+id/billing_total_text_view" />
+
+    <Button
+        android:id="@+id/total_input_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/total_input_button"
+        app:layout_constraintEnd_toEndOf="@+id/client_info_text_view"
+        app:layout_constraintStart_toStartOf="@+id/client_info_text_view"
+        app:layout_constraintTop_toBottomOf="@+id/client_info_text_view" />
+
+    <Button
+        android:id="@+id/total_record_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/total_record_button"
+        app:layout_constraintEnd_toEndOf="@+id/total_input_button"
+        app:layout_constraintStart_toStartOf="@+id/total_input_button"
+        app:layout_constraintTop_toBottomOf="@+id/total_input_button" />
+
+    <Button
+        android:id="@+id/previous_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="@string/previous_button"
+        app:layout_constraintEnd_toStartOf="@+id/next_button"
+        app:layout_constraintTop_toBottomOf="@+id/total_record_button" />
+
+    <Button
+        android:id="@+id/next_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/next_button"
+        app:layout_constraintTop_toBottomOf="@+id/total_record_button"
+        tools:layout_editor_absoluteX="202dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

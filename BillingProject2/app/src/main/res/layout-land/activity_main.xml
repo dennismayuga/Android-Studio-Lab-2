@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <EditText
+        android:id="@+id/client_id_edit_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:inputType="textPersonName"
+        android:text="@string/client_id_edit_text"
+        android:layout_marginTop="50dp"
+
+
+        />
+
+    <EditText
+        android:id="@+id/client_name_edit_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:inputType="textPersonName"
+        android:text="@string/client_name_edit_text"
+        android:layout_marginTop="100dp"
+
+
+
+        />
+
+    <EditText
+        android:id="@+id/prd_name_edit_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="@string/prd_name_edit_text"
+        android:layout_gravity="right|center_horizontal"
+        android:layout_marginTop="30dp"
+
+
+
+        />
+
+    <EditText
+        android:id="@+id/prd_price_edit_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="@string/prd_price_edit_text"
+        android:layout_gravity="right|center_horizontal"
+        android:layout_marginTop="190dp"
+
+
+
+        />
+
+    <EditText
+        android:id="@+id/prd_qty_edit_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="@string/prd_qty_edit_text"
+        android:layout_gravity="right|center_horizontal"
+        android:layout_marginTop="290dp"
+
+        />
+
+    <TextView
+        android:id="@+id/billing_total_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/billing_total_text_view"
+        android:layout_gravity="left|top"
+
+
+
+        />
+
+    <TextView
+        android:id="@+id/client_info_text_view"
+        android:layout_width="254dp"
+        android:layout_height="80dp"
+        android:layout_gravity="top|left"
+        android:text="@string/client_info_text_view"
+        android:layout_marginTop="50dp"
+        />
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="292dp"
+        android:layout_height="188dp"
+        android:layout_gravity="bottom|left|center_horizontal"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/total_input_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/total_input_button" />
+
+        <Button
+            android:id="@+id/total_record_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/total_record_button" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|left|center_horizontal"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/previous_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/previous_button" />
+
+        <Button
+            android:id="@+id/next_button"
+            android:layout_width="149dp"
+            android:layout_height="wrap_content"
+            android:text="@string/next_button" />
+    </LinearLayout>
+
+</FrameLayout>
