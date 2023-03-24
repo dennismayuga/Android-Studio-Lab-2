@@ -4,6 +4,7 @@
     <string name="course_total_fees_text_view"></string>
     <string name="course_total_fees_button">Total Course Fees</string>
     <string name="course_next_button">Next Course</string>
+    <string name="course_details">Course Details</string>
 
 
 </resources>

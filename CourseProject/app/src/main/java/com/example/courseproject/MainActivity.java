@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                //get tge view of courseTotalFeesText_View
+                //get the view of courseTotalFeesText_View
                 courseTotalFees_text_view = (TextView) findViewById(R.id.course_total_fees_text_view);
                 courseTotalFees_text_view.setText("Total Course Fees is : " + allCourses[currentIndex].calculateCourseTotalFees()+"");
 // show is duration
@@ -70,7 +70,7 @@ public class MainActivity extends AppCompatActivity {
         nextCourse_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                currentIndex = (currentIndex-1)%allCourses.length;
+                currentIndex = (Math.abs(currentIndex-1))%allCourses.length;
                 courseText_text_view.setText("Course: "+allCourses[currentIndex].getCourse_no()+"  "+allCourses[currentIndex].getCourse_name());
                 courseTotalFees_text_view = (TextView) findViewById(R.id.course_total_fees_text_view);
                 courseTotalFees_text_view.setText("");

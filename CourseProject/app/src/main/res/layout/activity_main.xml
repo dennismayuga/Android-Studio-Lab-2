@@ -42,9 +42,10 @@
         android:id="@+id/course_next_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="55dp"
+        android:layout_marginTop="32dp"
         android:text="@string/course_next_button"
         app:layout_constraintEnd_toEndOf="@+id/course_total_fees_button"
         app:layout_constraintStart_toStartOf="@+id/course_total_fees_button"
         app:layout_constraintTop_toBottomOf="@+id/course_total_fees_button" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
